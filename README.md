@@ -10,6 +10,10 @@ pnpm dev
 ```bash
 pnpm test
 pnpm test:verifier-golden
+pnpm test:pack-regression
+```
+
+## 离线验证器
 ```
 
 ## 离线关卡验证器
@@ -17,6 +21,11 @@ pnpm test:verifier-golden
 pnpm verifier --levels levels/ch1 --out reports/ch1 --seed 12345 --rollouts 200 --topK 8 --gate
 ```
 
+## 关卡工厂流水线（Candidate -> Verify -> Gate -> Select -> Materialize）
+```bash
+pnpm level-factory:generate
+```
+输出目录：`reports/level_factory`、`levels/generated/ch1`
 输出：
 - `reports/ch1/*.report.json`
 - `reports/ch1/summary.csv`
@@ -37,4 +46,5 @@ pnpm verifier --levels levels/ch1 --out reports/ch1 --seed 12345 --rollouts 200 
 - `src/ai`: 基础机器人
 - `src/ui`: React 界面
 - `src/verifier`: 离线关卡验证器
+- `src/levelFactory`: 关卡工厂流水线
 - `docs`: 范围、规则、章节设计
