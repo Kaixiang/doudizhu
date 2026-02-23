@@ -1,0 +1,59 @@
+{
+  "chapterId": "golden",
+  "title": "golden",
+  "storyIntro": "",
+  "storyOutro": "",
+  "tags": [
+    "golden"
+  ],
+  "version": 1,
+  "winCondition": "PLAYER_SIDE_WIN",
+  "initialState": {
+    "hands": {
+      "0": [
+        "3",
+        "4",
+        "5"
+      ],
+      "1": [
+        "6",
+        "7",
+        "8"
+      ],
+      "2": [
+        "9",
+        "10",
+        "J"
+      ]
+    },
+    "currentPlayer": 0,
+    "roles": {
+      "0": "landlord",
+      "1": "farmerA",
+      "2": "farmerB"
+    },
+    "trick": {
+      "lastMove": null,
+      "lastPlayer": null,
+      "passCount": 0
+    },
+    "history": [],
+    "winner": null
+  },
+  "solution": [
+    {
+      "stepIndex": 0,
+      "expectedMove": [
+        "3"
+      ],
+      "explain": "x"
+    }
+  ],
+  "hints": [
+    {
+      "stepIndex": 0,
+      "text": "x"
+    }
+  ],
+  "levelId": "golden_003"
+}

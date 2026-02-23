@@ -10,6 +10,10 @@
     "test": "vitest run --coverage",
     "test:watch": "vitest",
     "lint": "eslint .",
+    "format": "prettier --write .",
+    "verifier": "node --loader ts-node/esm src/verifier/cli.ts",
+    "test:verifier-golden": "vitest run src/verifier/__tests__/goldenRegression.test.ts",
+    "verifier:golden:update": "node --loader ts-node/esm scripts/update-verifier-golden.ts"
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -30,6 +34,7 @@
     "typescript": "^5.7.2",
     "vite": "^6.0.3",
     "vitest": "^2.1.8",
+    "ts-node": "^10.9.2"
     "@vitest/coverage-v8": "^2.1.8"
   }
 }
