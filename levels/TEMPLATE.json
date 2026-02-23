@@ -1,0 +1,26 @@
+{
+  "levelId": "level_xxx",
+  "chapterId": "ch1",
+  "title": "关卡标题",
+  "storyIntro": "开场文案",
+  "storyOutro": "结算文案",
+  "tags": ["控先手"],
+  "version": 1,
+  "winCondition": "PLAYER_SIDE_WIN",
+  "initialState": {
+    "hands": {
+      "0": ["A", "A", "K"],
+      "1": ["Q", "Q"],
+      "2": ["J", "J"]
+    },
+    "currentPlayer": 0,
+    "roles": { "0": "landlord", "1": "farmerA", "2": "farmerB" },
+    "trick": { "lastMove": null, "lastPlayer": null, "passCount": 0 },
+    "history": [],
+    "winner": null
+  },
+  "solution": [
+    { "stepIndex": 0, "expectedMove": ["A"], "explain": "先手控权", "coachMessage": "先手不能轻易让出" }
+  ],
+  "hints": [{ "stepIndex": 0, "text": "先出最小可控单牌" }]
+}
