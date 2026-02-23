@@ -11,11 +11,11 @@
     "test:watch": "vitest",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "verifier": "node --loader ts-node/esm --experimental-specifier-resolution=node src/verifier/cli.ts",
+    "verifier": "node --loader ts-node/esm src/verifier/cli.ts",
     "test:verifier-golden": "vitest run src/verifier/__tests__/goldenRegression.test.ts",
-    "verifier:golden:update": "node --loader ts-node/esm --experimental-specifier-resolution=node scripts/update-verifier-golden.ts",
+    "verifier:golden:update": "node --loader ts-node/esm scripts/update-verifier-golden.ts",
     "test:pack-regression": "vitest run src/levelFactory/__tests__/packRegression.test.ts",
-    "level-factory:generate": "node --loader ts-node/esm --experimental-specifier-resolution=node src/levelFactory/pipelineCli.ts --count 100 --mode mixed --seed 12345"
+    "level-factory:generate": "node --loader ts-node/esm src/levelFactory/pipelineCli.ts --count 100 --mode mixed --seed 12345"
   },
   "dependencies": {
     "react": "^18.3.1",
