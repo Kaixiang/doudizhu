@@ -1,0 +1,64 @@
+{
+  "levelId": "level_005",
+  "chapterId": "ch1",
+  "title": "第一章-005",
+  "storyIntro": "你需要在残局中找到控先节奏。",
+  "storyOutro": "复盘关键手，继续下一关。",
+  "tags": [
+    "控先手"
+  ],
+  "version": 1,
+  "winCondition": "PLAYER_SIDE_WIN",
+  "initialState": {
+    "hands": {
+      "0": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "1": [
+        "8",
+        "8",
+        "9",
+        "9"
+      ],
+      "2": [
+        "10",
+        "10",
+        "J",
+        "J"
+      ]
+    },
+    "currentPlayer": 0,
+    "roles": {
+      "0": "landlord",
+      "1": "farmerA",
+      "2": "farmerB"
+    },
+    "trick": {
+      "lastMove": null,
+      "lastPlayer": null,
+      "passCount": 0
+    },
+    "history": [],
+    "winner": null
+  },
+  "solution": [
+    {
+      "stepIndex": 0,
+      "expectedMove": [
+        "3"
+      ],
+      "explain": "先用小单牌试探并保留顺子",
+      "coachMessage": "过早打散结构会丢掉节奏。"
+    }
+  ],
+  "hints": [
+    {
+      "stepIndex": 0,
+      "text": "优先出最小单牌，观察对手是否接牌。"
+    }
+  ]
+}
